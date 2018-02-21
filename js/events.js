@@ -13,8 +13,10 @@ function frameIt() {
 
 function pressIt() {
   $('document').on('keydown', function(key) {
-    alert('G was pressed');
-});
+    if (key.which == 71){
+      alert('G was pressed');
+    }
+  });
 }
 
 function submitIt() {
